@@ -5,5 +5,5 @@ def thala_check(string):
         print("Thala for no reason")
 
 if __name__ == "__main__":
-    user_input = input("Enter a string: ")
+    user_input = input("Enter a string : ")
     thala_check(user_input)
