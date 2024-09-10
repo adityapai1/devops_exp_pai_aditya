@@ -10,3 +10,5 @@ if __name__ == "__main__":
     user_input = os.environ.get('THALA_INPUT', '')
     print(f"Input: {user_input}")
     print(f"Result: {thala_check(user_input)}")
+    
+    
