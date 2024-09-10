@@ -1,3 +1,5 @@
+import os
+
 def thala_check(string):
     if len(string) % 7 == 0:
         print("Thala for a reason")
@@ -5,5 +7,5 @@ def thala_check(string):
         print("Thala for no reason")
 
 if __name__ == "__main__":
-    user_input = input("Enter a string : ")
+    user_input = os.environ.get('USER_INPUT', '')
     thala_check(user_input)
