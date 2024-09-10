@@ -2,10 +2,11 @@ import os
 
 def thala_check(string):
     if len(string) % 7 == 0:
-        print("Thala for a reason")
+        return "Thala for a reason"
     else:
-        print("Thala for no reason")
+        return "Thala for no reason"
 
 if __name__ == "__main__":
-    user_input = os.environ.get('USER_INPUT', '')
-    thala_check(user_input)
+    user_input = os.environ.get('THALA_INPUT', '')
+    print(f"Input: {user_input}")
+    print(f"Result: {thala_check(user_input)}")
